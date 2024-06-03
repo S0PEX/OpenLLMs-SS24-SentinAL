@@ -2,6 +2,12 @@
 
 Sentiment analysis is a crucial aspect of understanding public opinion, detecting trends, and monitoring social media content. While many models are trained specifically on data from platforms like Twitter, it's essential to evaluate their performance in other contexts. This experiment focuses on assessing the generalization capability of sentiment analysis models in non-Twitter domains. Additionally, we aim to understand how specific wordings, tenses, and character encodings influence sentiment classification. Identifying instances of false positives and false negatives due to non-standard characters is a critical part of this evaluation.
 
+### Getting Started
+
+To get started with SentinAL, please refer to the [Getting Started guide](getting-started.md) for instructions on setting up the project environment, cloning the repository, and installing the required packages.
+
+---
+
 ### 1. Task
 
 The primary goal of this task is to evaluate the generalization capability of two sentiment analysis models when applied to non-Twitter domains. Specifically, we aim to understand how different wordings, tenses, and character encodings influence sentiment classification. We will compare the performance of the [Twitter-roBERTa-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) model, trained on Twitter data, and the [distilroberta-finetuned-financial-news-sentiment-analysis](https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis) model, trained on financial news data.
