@@ -51,9 +51,9 @@ $ pip install -r requirements.txt
 
 ## Folder Structure
 
-Here's an overview of the folder structure:
+Below is an outline of the folder structure:
 
-- **data/**: Contains subdirectories for storing raw data, processed data, and evaluation results.
-- **models/**: Stores the pre-trained model configurations and weights for each OpenLLM.
-- **notebooks/**: Holds Jupyter notebooks for data preparation, model evaluation, and error analysis.
-- **src/**: Contains Python source code for data preprocessing, model implementation, evaluation, and utility functions.
+- **data/**: This directory contains subfolders for storing raw data, processed data, and evaluation results.
+- **models/**: Here, you'll find the pre-trained model configurations and weights for each OpenLLM. Since some models are implemented using Hugging Face Transformers, the weights and configurations will be downloaded during runtime. Therefore, we only provide their transformer pipeline implementation adapted to our generic model class.
+- **notebooks/**: This section holds Jupyter notebooks for data preparation, model evaluation, and error analysis.
+- **src/**: In this directory, you'll find Python source code for data preprocessing, model implementation, evaluation, and utility functions.
