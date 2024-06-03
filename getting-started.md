@@ -7,7 +7,7 @@ Welcome to the SentinAL (Sentiment Analysis Generalization Experiment) repositor
 In order for the Jupyter notebook to function correctly, please ensure that the Python base path is set to the project's root directory. For Visual Studio Code users, you can set `jupyter.notebookFileRoot` to `${workspaceFolder}` in your settings.
 
 ```json
-# .vscode/settings.json
+// .vscode/settings.json
 {
   "jupyter.notebookFileRoot": "${workspaceFolder}"
 }
