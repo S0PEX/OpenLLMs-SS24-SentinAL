@@ -1,3 +1,5 @@
+import torch
+from datasets import Dataset
 from transformers import Pipeline, pipeline
 
 
@@ -12,8 +14,24 @@ class Model:
 
         Args:
             texts (list): A list of text strings.
+            top_k (int): The number of sentiment predictions to return.
 
         Returns:
             list: A list of dictionaries containing the sentiment prediction for each text.
         """
         return self.pipeline(texts, top_k=top_k)
+
+    def evaluate_dataset(self, dataset: Dataset, feature: str, top_k: int = 1):
+        """
+        Evaluate the sentiment of a dataset.
+
+        Args:
+            dataset (datasets.Dataset): A dataset containing text data.
+            feature (str): The name of the column containing the text data.
+            top_k (int): The number of sentiment predictions to return.
+
+        Returns:
+            list: A list of dictionaries containing the sentiment prediction for each text.
+        """
+        data = dataset[feature]
+        return self.evaluate(data, top_k=top_k)
