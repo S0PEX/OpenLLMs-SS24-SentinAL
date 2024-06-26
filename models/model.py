@@ -6,7 +6,7 @@ from transformers import Pipeline, pipeline
 class Model:
     def __init__(self, model_name: str, task: str = "text-classification"):
         self.model_name: str = model_name
-        self.pipeline: Pipeline = pipeline(task=task, model=model_name)
+        self.pipeline: Pipeline = pipeline(task=task, model=model_name, max_length=512, truncation=True)
 
     def evaluate(self, texts: list[str], top_k: int = 1):
         """

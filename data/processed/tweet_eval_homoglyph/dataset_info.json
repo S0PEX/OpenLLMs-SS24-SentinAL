@@ -1,0 +1,65 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "hate",
+  "dataset_name": "tweet_eval",
+  "dataset_size": 1808350,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/cardiffnlp/tweet_eval@b3a375baf0f409c77e6bc7aa35102b7b3534f8be/hate/train-00000-of-00001.parquet": {
+      "num_bytes": 815722,
+      "checksum": null
+    },
+    "hf://datasets/cardiffnlp/tweet_eval@b3a375baf0f409c77e6bc7aa35102b7b3534f8be/hate/test-00000-of-00001.parquet": {
+      "num_bytes": 277846,
+      "checksum": null
+    },
+    "hf://datasets/cardiffnlp/tweet_eval@b3a375baf0f409c77e6bc7aa35102b7b3534f8be/hate/validation-00000-of-00001.parquet": {
+      "num_bytes": 102778,
+      "checksum": null
+    }
+  },
+  "download_size": 1196346,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "names": [
+        "non-hate",
+        "hate"
+      ],
+      "_type": "ClassLabel"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 3004696,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1224775,
+      "num_examples": 9000,
+      "dataset_name": "tweet_eval"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 429306,
+      "num_examples": 2970,
+      "dataset_name": "tweet_eval"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 154269,
+      "num_examples": 1000,
+      "dataset_name": "tweet_eval"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
